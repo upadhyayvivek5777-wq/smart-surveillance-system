@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="/static/style.css">
+<title>Surveillance</title>
+</head>
+
+<body>
+
+<header>
+<h1>🚨 Surveillance System</h1>
+<div id="status">🟢 ACTIVE</div>
+</header>
+
+<section class="live">
+<h2>Live Feed</h2>
+<img src="/video">
+</section>
+
+<section>
+<h2>Captured</h2>
+<div id="grid"></div>
+</section>
+
+<script>
+async function load(){
+ let r = await fetch('/data');
+ let data = await r.json();
+ let grid = document.getElementById('grid');
+ grid.innerHTML = "";
+ data.forEach(i=>{
+   grid.innerHTML += `<div class="card">
+     <img src="/alerts/${i}">
+     <p>${i}</p>
+   </div>`;
+ });
+}
+setInterval(load,3000);
+load();
+</script>
+
+</body>
+</html>

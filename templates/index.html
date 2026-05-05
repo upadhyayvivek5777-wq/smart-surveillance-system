@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/style.css">
+<title>Smart Surveillance</title>
+</head>
+
+<body>
+
+<header>
+<h1>🚨 Smart Surveillance</h1>
+<p class="desc">Real-time motion detection system</p>
+</header>
+
+<section class="grid">
+{% for i in images %}
+<div class="card">
+<img src="/alerts/{{i}}">
+<p>{{i}}</p>
+</div>
+{% endfor %}
+</section>
+
+</body>
+</html>
