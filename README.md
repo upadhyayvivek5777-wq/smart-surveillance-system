@@ -7,25 +7,26 @@ The system detects motion using computer vision techniques and provides a web-ba
 
 ## 🔥 Features
 
-- 🎯 Motion Detection using frame differencing
-- 📸 Automatic Image Capture
-- 🌐 Web Dashboard for monitoring
-- 🖥️ Responsive UI (works on laptop/mobile)
-- ⚡ Efficient storage (prevents continuous spam saving)
+- 🎯 Motion Detection using frame differencing  
+- 📸 Automatic Image Capture  
+- 🌐 Web Dashboard for monitoring  
+- 🖥️ Responsive UI (works on laptop/mobile)  
+- ⚡ Efficient storage (prevents continuous spam saving)  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python
-- OpenCV
-- Flask
-- HTML, CSS
+- Python  
+- OpenCV  
+- Flask  
+- HTML, CSS  
 
 ---
 
 ## 📂 Project Structure
 
+```text
 smart-surveillance/
 │
 ├── main.py
@@ -46,6 +47,7 @@ smart-surveillance/
 │   └── style.css
 │
 └── alerts/
+```
 
 ---
 
